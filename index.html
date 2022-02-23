@@ -24,8 +24,13 @@
 
 <body>
     <main>
+        <!-- container principale dell'intera pagina -->
         <div class="container p-5">
+
+            <!-- wrapper dell'intero main che cambia il coloro di sfondo e aggiunge padding -->
             <div class="wrapper bg-light p-5">
+
+                <!-- section che comprende i dati iniziali che l'utente deve inserire per calcolare il prezzo del biglietto -->
                 <section id="price-calc" class="mb-5">
 
                     <div class="row text-center mb-3">
@@ -34,6 +39,7 @@
                         </div>
                     </div>
 
+                    <!-- form con gli input da compilare da parte dell'utente -->
                     <form class="row py-4 bg-white shadow bg-body rounded justify-content-center" onsubmit="event.preventDefault()">
                         <div class="col-3 text-center">
                             <label for="input-name" class="form-label">Nome Cognome</label>
@@ -45,7 +51,7 @@
                         </div>
                         <div class="col-3 text-center">
                             <label for="input-select" class="form-label">Fascia d'età</label>
-                            <select class="form-select" id="imput-select">
+                            <select class="form-select" id="input-select">
                                 <option selected>Maggiorenne</option>
                                 <option value="1">Minorenne</option>
                                 <option value="2">Over 65</option>
@@ -59,6 +65,7 @@
 
                 </section>
 
+                <!-- sezione con il biglietto creato e inizialmente non visibile fino al momento in cui l'utente lo genera -->
                 <section id="ticket" class="d-none">
 
                     <div class="row text-center mb-3">
