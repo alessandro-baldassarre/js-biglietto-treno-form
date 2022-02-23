@@ -46,6 +46,8 @@ document.getElementById("btn-genera").addEventListener("click", function(){
     let cpCode = Math.floor((Math.random() * 10000))+1000;
     document.getElementById("cp-code").innerHTML = cpCode;
 
+
+
 });
 
 document.getElementById("btn-annulla").addEventListener("click", function(){

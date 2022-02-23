@@ -34,7 +34,7 @@
                         </div>
                     </div>
 
-                    <form class="row py-4 bg-white shadow bg-body rounded justify-content-center">
+                    <form class="row py-4 bg-white shadow bg-body rounded justify-content-center" onsubmit="event.preventDefault()">
                         <div class="col-3 text-center">
                             <label for="input-name" class="form-label">Nome Cognome</label>
                             <input type="text" id="input-name" class="form-control" required>
@@ -52,7 +52,7 @@
                             </select>
                         </div>
                         <div class="col-12 text-center pt-5">
-                            <button id="btn-genera" type="button" class="btn btn-primary me-4">Genera</button>
+                            <button id="btn-genera" type="submit" class="btn btn-primary me-4">Genera</button>
                             <button id="btn-annulla" type="button" class="btn btn-primary">Annulla</button>
                         </div>
                     </form>
