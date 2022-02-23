@@ -31,14 +31,14 @@ document.getElementById("btn-genera").addEventListener("click", function(){
     // controllo l'età del passeggero e in base al risultato applico lo sconto inerente e lo stampo sull'html
     if (ageSelected === "Minorenne") {
 
-        document.getElementById("ticket-type").innerHTML = `Biglietto con sconto del 20%`;
+        document.getElementById("ticket-type").innerHTML = `Biglietto con sconto del 17%`;
         price -= (price * 0.17);
         document.getElementById("ticket-price").innerHTML = `${price.toFixed(2)} €`;
 
     }
     else if (ageSelected === "Over 65") {
 
-        document.getElementById("ticket-type").innerHTML = `Biglietto con sconto del 40%`;
+        document.getElementById("ticket-type").innerHTML = `Biglietto con sconto del 33%`;
         price -= (price * 0.33);
         document.getElementById("ticket-price").innerHTML = `${price.toFixed(2)} €`;
     }
