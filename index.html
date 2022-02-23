@@ -34,14 +34,14 @@
                         </div>
                     </div>
 
-                    <div class="row py-4 bg-white shadow bg-body rounded justify-content-center">
+                    <form class="row py-4 bg-white shadow bg-body rounded justify-content-center">
                         <div class="col-3 text-center">
                             <label for="input-name" class="form-label">Nome Cognome</label>
-                            <input type="text" id="input-name" class="form-control">
+                            <input type="text" id="input-name" class="form-control" required>
                         </div>
                         <div class="col-3 text-center mx-5">
                             <label for="input-km" class="form-label">km da percorrere</label>
-                            <input type="text" id="input-km" class="form-control">
+                            <input type="text" id="input-km" class="form-control" required>
                         </div>
                         <div class="col-3 text-center">
                             <label for="input-select" class="form-label">Fascia d'età</label>
@@ -55,11 +55,11 @@
                             <button id="btn-genera" type="button" class="btn btn-primary me-4">Genera</button>
                             <button id="btn-annulla" type="button" class="btn btn-primary">Annulla</button>
                         </div>
-                    </div>
+                    </form>
 
                 </section>
 
-                <section id="ticket">
+                <section id="ticket" class="d-none">
 
                     <div class="row text-center mb-3">
                         <div class="col-12">
@@ -72,7 +72,7 @@
                             <h5>dettaglio passegeri</h5>
                         </div>
                         <div class="col-3 bg-secondary p-3">
-                            <h4 class="text-uppercase">nome passegero</h4>
+                            <h4 class="text-uppercase mb-2">nome passegero</h4>
                             <p id="name-passenger"></p>
                         </div>
                         <div class="col-9 p-3">
